@@ -1,10 +1,9 @@
 
-
-
-    import java.io.File;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.bytedeco.javacv.*;
+
+    import javax.swing.*;
 
     /**
      *
@@ -24,10 +23,12 @@ import org.bytedeco.javacv.*;
 
                 Frame frame = grabber.grab();
                 CanvasFrame canvasFrame=new CanvasFrame("FaceGrip");
+                canvasFrame.setDefaultCloseOperation(CanvasFrame.EXIT_ON_CLOSE);
                 canvasFrame.setSize(frame.imageWidth, frame.imageHeight);
                 while(canvasFrame.isVisible()&&(frame=grabber.grab())!=null){
                     canvasFrame.showImage(frame);
                 }
+
             } catch (FrameGrabber.Exception ex) {
                 Logger.getLogger(FaceID.class.getName()).log(Level.SEVERE, null, ex);
             }
