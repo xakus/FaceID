@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54adffbc-001b-41b8-b24e-025ceb90f5eb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/FaceID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FaceID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/artoolkitplus_android_arm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FaceID.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FaceID.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,8 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FaceID.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="323">
+              <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,8 +121,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544567004324" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/javacv-bin/videoinput.jar!/" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544567478861" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/javacv-bin" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -134,6 +136,7 @@
       <recent name="C:\Users\Murad\Documents\GitHub\FaceID\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Murad\Documents\GitHub\FaceID" />
       <recent name="C:\Users\Murad\Documents\GitHub\FaceID\lib\javacv-bin" />
       <recent name="C:\Users\Murad\Documents\GitHub\FaceID\lib" />
     </key>
@@ -171,15 +174,15 @@
       <updated>1544465359552</updated>
       <workItem from="1544465360863" duration="1394000" />
       <workItem from="1544558531369" duration="624000" />
-      <workItem from="1544561039890" duration="3049000" />
+      <workItem from="1544561039890" duration="3288000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5067000" />
+    <option name="totallyTimeSpent" value="5306000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
@@ -220,8 +223,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/FaceID.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="323">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -293,7 +296,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>artoolkitplus-android-arm</last-edited>
+          <last-edited>javacv-bin</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
