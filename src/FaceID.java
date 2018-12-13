@@ -1,4 +1,5 @@
 
+import java.text.Format;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -10,13 +11,17 @@ import org.bytedeco.javacv.*;
 
 public class FaceID {
     public FaceID() {
-        String pathname = "E:\\MOV_22051";
+        String pathname = "http://62.163.246.48:50001/cgi-bin/faststream.jpg?stream=half&fps=15&rand=COUNTER";
+       // String pathname = "http://streams.videolan.org/samples/MPEG-4/video.mp4";
+//        String pathname = "https://youtu.be/FuK-6gD3h_8";
+//        String pathname = "E:\\MOV_22051.mp4";
         try {
 
-            System.out.println(System.getProperty("java.library.path"));
+           // System.out.println(System.getProperty("java.library.path"));
 
 
-            OpenCVFrameGrabber grabber = new OpenCVFrameGrabber(0);
+            //OpenCVFrameGrabber grabber = new OpenCVFrameGrabber(0);
+            FFmpegFrameGrabber grabber=new FFmpegFrameGrabber(pathname);
             grabber.start();
 
             Frame frame = grabber.grab();
