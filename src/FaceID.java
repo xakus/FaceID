@@ -13,9 +13,8 @@ import static org.bytedeco.javacpp.opencv_core.cvGetSeqElem;
 import static org.bytedeco.javacpp.opencv_core.cvLoad;
 import static org.bytedeco.javacpp.opencv_core.cvarrToMat;
 import static org.bytedeco.javacpp.opencv_imgproc.rectangle;
-import static org.bytedeco.javacpp.opencv_objdetect.CV_HAAR_DO_CANNY_PRUNING;
-import static org.bytedeco.javacpp.opencv_objdetect.CV_HAAR_MAGIC_VAL;
-import static org.bytedeco.javacpp.opencv_objdetect.cvHaarDetectObjects;
+import static org.bytedeco.javacpp.opencv_objdetect.*;
+
 /**
  * @author Murad
  */
@@ -27,23 +26,23 @@ public class FaceID {
    String f="C:\\Users\\Murad\\Documents\\GitHub\\FaceID\\face.xml";
     public FaceID() {
         //String pathname = "https://www.youtube.com/watch?v=ydZBBAPE_mw";
-        // String pathname = "http://streams.videolan.org/samples/MPEG-4/video.mp4";
+         //String pathname = "http://streams.videolan.org/samples/MPEG-4/video.mp4";
 //        String pathname = "https://youtu.be/FuK-6gD3h_8";
+        String pathname = "E:\\videoplayback.mp4";
 //        String pathname = "E:\\MOV_22051.mp4";
         try {
 
             // System.out.println(System.getProperty("java.library.path"));
 
             cascade=new CvHaarClassifierCascade(cvLoad(f));
-            OpenCVFrameGrabber grabber = new OpenCVFrameGrabber(0);
-            //  FFmpegFrameGrabber grabber=new FFmpegFrameGrabber(pathname);
-
+            //OpenCVFrameGrabber grabber = new OpenCVFrameGrabber(0);
+              FFmpegFrameGrabber grabber=new FFmpegFrameGrabber(pathname);
+            grabber.setAudioStream(0);
             grabber.start();
-
             Frame frame = grabber.grab();
             CanvasFrame canvasFrame = new CanvasFrame("FaceGrip");
-            JButton jButton=new JButton("press");
-            canvasFrame.add(jButton);
+         //   JButton jButton=new JButton("press");
+           // canvasFrame.add(jButton);
             canvasFrame.setDefaultCloseOperation(3);
             canvasFrame.setSize(frame.imageWidth, frame.imageHeight);
             while (canvasFrame.isVisible() && (frame = grabber.grab()) != null) {
@@ -59,7 +58,7 @@ public class FaceID {
 
     private void faceDetect(IplImage img){
       CvMemStorage memStorage =CvMemStorage.create();
-       CvSeq face=cvHaarDetectObjects(img,cascade,memStorage,1.5,3,CV_HAAR_DO_CANNY_PRUNING);
+       CvSeq face=cvHaarDetectObjects(img,cascade,memStorage,1.3,5,CV_HAAR_SCALE_IMAGE);
        int total = face.total();
        if(total>0){
            System.out.println(total);
