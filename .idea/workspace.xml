@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54adffbc-001b-41b8-b24e-025ceb90f5eb" name="Default Changelist" comment="">
+    <list default="true" id="54adffbc-001b-41b8-b24e-025ceb90f5eb" name="Default Changelist" comment="Add Images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FaceID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FaceID.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,22 +34,24 @@
     <session id="-1737249225">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.14" value="4" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="907" />
-          <entry key="txt" value="10" />
+          <entry key="txt" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="907" />
-          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="PLAIN_TEXT" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -72,11 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FaceID.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="30" column="50" lean-forward="true" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -114,7 +112,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="31" />
     <option name="y" value="48" />
     <option name="width" value="1400" />
@@ -125,7 +123,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,13 +134,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545127395810" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545127707982" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/javacv-bin" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -153,11 +151,12 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Murad\Documents\GitHub\FaceID" />
       <recent name="C:\Users\Murad\Documents\GitHub\FaceID\lib\javacv-bin" />
       <recent name="C:\Users\Murad\Documents\GitHub\FaceID\lib" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Murad\Documents\GitHub\FaceID" />
       <recent name="C:\Users\Murad\Documents\GitHub\FaceID\lib\javacv-bin" />
       <recent name="C:\Users\Murad\Documents\GitHub\FaceID\lib" />
@@ -201,6 +200,8 @@
       <workItem from="1544879582448" duration="9887000" />
       <workItem from="1544996127690" duration="3232000" />
       <workItem from="1545077157885" duration="2390000" />
+      <workItem from="1545127337241" duration="368000" />
+      <workItem from="1545331905138" duration="608000" />
     </task>
     <task id="LOCAL-00001" summary="Add IP CAM">
       <created>1544742540673</created>
@@ -216,11 +217,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544992110687</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add Images">
+      <created>1545127418242</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1545127418242</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26179000" />
+    <option name="totallyTimeSpent" value="27155000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
@@ -231,11 +239,11 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.17430703" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.12793177" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.2835821" side_tool="true" visible="true" weight="0.3279743" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.2835821" side_tool="true" visible="true" weight="0.30439442" />
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="4" weight="0.3290461" />
       <window_info anchor="bottom" id="Message" order="5" />
@@ -264,7 +272,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add IP CAM" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add IP CAM" />
+    <MESSAGE value="Add Images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Images" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$PROJECT_DIR$/javacv-bin/javacv.jar!/org/bytedeco/javacv/FrameGrabber.class">
@@ -274,13 +283,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/face.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/face.xml" />
     <entry file="jar://$PROJECT_DIR$/javacv-bin/opencv.jar!/org/bytedeco/javacpp/helper/opencv_objdetect.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -290,11 +293,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FaceID.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="30" column="50" lean-forward="true" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -363,7 +363,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>javacv-bin</last-edited>
+          <last-edited>artoolkitplus-android-arm</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
