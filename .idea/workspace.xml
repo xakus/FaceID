@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54adffbc-001b-41b8-b24e-025ceb90f5eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/FaceDetect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FaceOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frame/View.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frame/View.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ConsAndStatic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FaceDetectAndSave.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FaceForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frame/FaceRecognizingAndTraning.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FaceDetect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FaceDetect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FaceID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FaceID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FaceOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FaceOperation.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,29 +84,31 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1536" />
+          <entry key="java" value="3246" />
+          <entry key="txt" value="17" />
           <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1536" />
+          <entry key="JAVA" value="3246" />
+          <entry key="PLAIN_TEXT" value="17" />
           <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
+          <entry key="class" value="2" />
           <entry key="form" value="1" />
-          <entry key="java" value="4" />
+          <entry key="java" value="9" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
+          <entry key="CLASS" value="2" />
           <entry key="GUI_DESIGNER_FORM" value="1" />
-          <entry key="JAVA" value="4" />
+          <entry key="JAVA" value="9" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
@@ -115,8 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FaceID.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
-              <caret line="69" column="32" lean-forward="true" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
+            <state relative-caret-position="235">
+              <caret line="78" column="44" lean-forward="true" selection-start-line="78" selection-start-column="44" selection-end-line="78" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,48 +129,60 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Frame/FaceRecognizingAndTraning.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FaceOperation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="39" column="54" lean-forward="true" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FaceDetectAndSave.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="42" column="41" lean-forward="true" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FaceForm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="21" selection-start-column="21" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FaceDetect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+            <state relative-caret-position="149">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2333#2334#0" expanded="true" />
+                <element signature="e#2362#2363#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Frame/View.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="74" lean-forward="true" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Frame/View.form">
-          <provider selected="true" editor-type-id="ui-designer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/face.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/face2.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365250">
-              <caret line="24350" selection-start-line="24350" selection-end-line="24350" />
             </state>
           </provider>
         </entry>
@@ -199,9 +215,12 @@
         <option value="$PROJECT_DIR$/res/face2.xml" />
         <option value="$PROJECT_DIR$/src/Frame/View.form" />
         <option value="$PROJECT_DIR$/src/Frame/View.java" />
-        <option value="$PROJECT_DIR$/src/FaceOperation.java" />
-        <option value="$PROJECT_DIR$/src/FaceID.java" />
         <option value="$PROJECT_DIR$/src/FaceDetect.java" />
+        <option value="$PROJECT_DIR$/src/ConsAndStatic.java" />
+        <option value="$PROJECT_DIR$/src/FaceDetectAndSave.java" />
+        <option value="$PROJECT_DIR$/src/FaceID.java" />
+        <option value="$PROJECT_DIR$/src/FaceOperation.java" />
+        <option value="$PROJECT_DIR$/src/Frame/FaceRecognizingAndTraning.java" />
       </list>
     </option>
   </component>
@@ -211,9 +230,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="73" />
-    <option name="y" value="264" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="75" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="839" />
   </component>
@@ -247,7 +266,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE" value="ToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545313535857" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545435267401" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -308,7 +327,7 @@
       <workItem from="1544992840458" duration="8645000" />
       <workItem from="1545223305268" duration="297000" />
       <workItem from="1545287667878" duration="1349000" />
-      <workItem from="1545290677541" duration="8498000" />
+      <workItem from="1545290677541" duration="22327000" />
     </task>
     <task id="LOCAL-00001" summary="Add IP CAM">
       <created>1544742540673</created>
@@ -317,14 +336,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544742540673</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add New Structure">
+      <created>1545314358826</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1545314358826</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38031000" />
+    <option name="totallyTimeSpent" value="51860000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="75" y="23" width="1440" height="839" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -341,7 +367,7 @@
       <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.49785408" weight="0.32891566" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" sideWeight="0.49928367" weight="0.32931727" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49426934" visible="true" weight="0.28554216" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49426934" visible="true" weight="0.3172691" />
       <window_info anchor="bottom" id="Debug" order="8" sideWeight="0.4985694" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -366,13 +392,25 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add IP CAM" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add IP CAM" />
+    <MESSAGE value="Add New Structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add New Structure" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/FaceOperation.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="Loader.extractResource(classiferName, null, &quot;face&quot;, &quot;.xml&quot;)" />
         <watch expression="classifierName" />
+        <watch expression="faceDetect.getCvRect()" />
       </configuration>
     </watches-manager>
   </component>
@@ -406,8 +444,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frame/View.form">
-      <provider selected="true" editor-type-id="ui-designer" />
+    <entry file="jar://$USER_HOME$/javacv-bin/opencv.jar!/org/bytedeco/javacpp/opencv_objdetect.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="159" selection-start-line="159" selection-end-line="159" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Frame/View.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -419,30 +461,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FaceOperation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="41" lean-forward="true" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/Frame/View.form">
+      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FaceID.java">
+    <entry file="file://$PROJECT_DIR$/src/FaceForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="69" column="32" lean-forward="true" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FaceDetect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        <state relative-caret-position="149">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2333#2334#0" expanded="true" />
+            <element signature="e#2362#2363#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ConsAndStatic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="98" lean-forward="true" selection-start-line="3" selection-start-column="98" selection-end-line="3" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FaceID.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="78" column="44" lean-forward="true" selection-start-line="78" selection-start-column="44" selection-end-line="78" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FaceDetectAndSave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="42" column="41" lean-forward="true" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FaceOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="39" column="54" lean-forward="true" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frame/FaceRecognizingAndTraning.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

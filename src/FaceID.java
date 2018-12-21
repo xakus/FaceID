@@ -35,15 +35,9 @@ public class FaceID {
         // String pathname = "http://streams.videolan.org/samples/MPEG-4/video.mp4";
 //        String pathname = "https://youtu.be/FuK-6gD3h_8";
        String pathname = "/Users/owner/Downloads/videoplayback (1).mp4";
-       String im="/Users/owner/Desktop/Images/Sevinc Quluzade.png";
-        try {
-            String classifierName = null;
-            URL url = new URL("https://raw.github.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalface_alt.xml");
-            File file = Loader.extractResource(url, null, "classifier", ".xml");
-            file.deleteOnExit();
-            classifierName = file.getAbsolutePath();
-            // System.out.println(System.getProperty("java.library.path"));
-            Loader.load(opencv_objdetect.class);
+       String im="/Users/owner/Desktop/Images/Zamin Melikov.png";
+//        try {
+
 
            // OpenCVFrameGrabber grabber = new OpenCVFrameGrabber(0);
 
@@ -65,23 +59,27 @@ public class FaceID {
 
             canvasFrame.setDefaultCloseOperation(3);
             canvasFrame.setSize(frame.imageWidth, frame.imageHeight);
+            FaceDetect faceDetect=new FaceDetect();
             while (canvasFrame.isVisible() && (frame = converter.convert(grayImage)) != null) {
                 img=converter.convert(frame).clone();
-                faceDetect(img);
+                //faceDetect(img);
+                faceDetect.faceRectangleAndText(img,faceDetect.faceDetect(img,1.3,4,CV_HAAR_DO_CANNY_PRUNING),"ddd");
                 canvasFrame.showImage(converter.convert(img));
             }
 
-        } catch (FrameGrabber.Exception ex) {
-            Logger.getLogger(FaceID.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        } catch (FrameGrabber.Exception ex) {
+//            Logger.getLogger(FaceID.class.getName()).log(Level.SEVERE, null, ex);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
     }
 
 
 
     public static void main(String[] args) {
-        new FaceID();
+       //new FaceID();
+        new FaceDetectAndSave("/Users/owner/Desktop/Images/",System.getProperty("user.home")+"/Desktop/face_images/",
+                240,240);
     }
 
 }
