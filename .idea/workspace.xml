@@ -2,17 +2,95 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54adffbc-001b-41b8-b24e-025ceb90f5eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/FacePredict.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConsAndStatic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConsAndStatic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FaceDetect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FaceDetect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FaceDetectAndSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FaceDetectAndSave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FaceID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FaceID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FaceOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FaceOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frame/FaceRecognizingAndTraning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FaceRecognizingAndTraning.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frame/View.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frame/View.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Abdul Qurbanov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Amid Selimov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Anar Shamxalov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Aqil Rzayev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Aqshin Resulov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Araz Eliyev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Araz Qurbanov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Asim Seferov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Azer Veliyev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Cavid Esedov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Cavid Memmedov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Ceyhun Mirkishiyev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Chingiz Memmedov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Dashqin Qedimaliyev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Durdane Ehedova.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Efser Qurbanov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Elesger Eliyev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Eli Novruzlu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Elmir Rzayev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Elnur Qemberov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Elnur Quliyev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Emil Ferzeliyev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Emine Qasimzade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Ferid Esedov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Ferman Mikayilov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Fidan Ceferova.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Fidan Suleymanova.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Firduse Novruzova.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Gulten Elimemmedova.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Gunay Hesenova.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Gunay Kazimova.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Ilona Busheva.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Irada Bayramova.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Irade Zeynalova.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Isa Huseynli.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Ismayil Memmedov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Ismayil Pashayev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Kenan Semedli.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Larisa Bolshanina.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Malik Reshidov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Mehemmed Zulfuqarli.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Mehman Zulfuqarli.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Memmed Kerimli.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Mensure Mikayilova.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Miraga Ehedzade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Mziya Rusadze.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Nahide Haciyeva.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Nazim Semedov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Nermin Hebibova.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Nermin Memmedova.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Nigar Memmedova.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Niyal Huseynova.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Niyameddin Elili.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Qember Memmedov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Rafael Eliyev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Ramil Huseynov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Ramin Babayev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Rena Ferzeliyeva.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Reshad Aliyev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Ruslan Romanenko.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Sabuhi Serxanli.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Safiya Agamirova.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Sebine Namazova.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Serxan Memmedov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Sevinc Quluzade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Susenber Novruzova.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Tahir Mirkishiyev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Terane Aydinbeyova.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Terane Ceferova.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Teymur Shamilov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Tural Muradov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Turane Tagiyeva.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Ulker Isayeva.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Ulker Qedirova.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Ulvi Merdeliyev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Vaqif Shahmuradov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Vugar Kazimov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Vuqar Ismayilov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Vusal Selimov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Vusal Xankishiyev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Xaneli Agayev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Xeyal Haciyev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Zamin Agazade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Zamin Melikov.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Zaur Memmedzade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Zerife Qasimova.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/Zibeyda Elekberli.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/vadim Koleqov.png" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,14 +167,14 @@
         <counts>
           <entry key="dummy" value="15" />
           <entry key="java" value="5105" />
-          <entry key="txt" value="17" />
+          <entry key="txt" value="30" />
           <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="5105" />
-          <entry key="PLAIN_TEXT" value="32" />
+          <entry key="PLAIN_TEXT" value="45" />
           <entry key="XML" value="5" />
         </counts>
       </usages-collector>
@@ -105,6 +183,7 @@
           <entry key="class" value="7" />
           <entry key="form" value="1" />
           <entry key="java" value="16" />
+          <entry key="png" value="1" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
@@ -112,6 +191,7 @@
         <counts>
           <entry key="CLASS" value="7" />
           <entry key="GUI_DESIGNER_FORM" value="1" />
+          <entry key="Image" value="1" />
           <entry key="JAVA" value="16" />
           <entry key="XML" value="3" />
         </counts>
@@ -120,10 +200,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FaceID.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
+            <state relative-caret-position="1260">
               <caret line="84" column="10" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -136,7 +216,7 @@
         <entry file="file://$PROJECT_DIR$/src/FacePredict.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -148,7 +228,7 @@
         <entry file="file://$PROJECT_DIR$/src/FaceOperation.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="218">
-              <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+              <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -180,7 +260,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ConsAndStatic.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
@@ -270,11 +350,6 @@
               <item name="FaceID" type="b2602c69:ProjectViewProjectNode" />
               <item name="FaceID" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="FaceID" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FaceID" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -287,7 +362,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE" value="ToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545671930598" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545672075860" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -353,7 +428,7 @@
       <workItem from="1545223305268" duration="297000" />
       <workItem from="1545287667878" duration="1349000" />
       <workItem from="1545290677541" duration="22517000" />
-      <workItem from="1545578780194" duration="29861000" />
+      <workItem from="1545578780194" duration="30122000" />
     </task>
     <task id="LOCAL-00001" summary="Add IP CAM">
       <created>1544742540673</created>
@@ -376,31 +451,37 @@
       <option name="project" value="LOCAL" />
       <updated>1545435287624</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Alpha version">
+      <created>1545672004375</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1545672004376</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81911000" />
+    <option name="totallyTimeSpent" value="82172000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.16977078" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.16977078" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="0" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5007163" side_tool="true" weight="0.32931727" />
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.49785408" weight="0.32891566" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" sideWeight="0.49928367" weight="0.32931727" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.49426934" visible="true" weight="0.31686747" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49426934" weight="0.31686747" />
       <window_info anchor="bottom" id="Debug" order="8" sideWeight="0.4985694" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -426,7 +507,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add IP CAM" />
     <MESSAGE value="Add New Structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add New Structure" />
+    <MESSAGE value="Alpha version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alpha version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -553,7 +635,7 @@
     <entry file="file://$PROJECT_DIR$/src/FacePredict.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -583,17 +665,7 @@
     <entry file="file://$PROJECT_DIR$/src/FaceOperation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
-          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FaceID.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="84" column="10" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -604,6 +676,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Images/Amid Selimov.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FaceID.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="84" column="10" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
