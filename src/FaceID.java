@@ -1,12 +1,14 @@
 
+import dao.Dao;
 import org.bytedeco.javacpp.opencv_core.*;
-import org.bytedeco.javacpp.opencv_face;
-import org.bytedeco.javacpp.opencv_imgcodecs;
 import org.bytedeco.javacv.*;
+import project.FaceDetect;
+import utility.DBC;
 
 
-import static org.bytedeco.javacpp.opencv_core.*;
-import static org.bytedeco.javacpp.opencv_imgproc.*;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 import static org.bytedeco.javacpp.opencv_objdetect.*;
 
 /**
@@ -19,6 +21,7 @@ public class FaceID {
     IplImage img;
 
     public FaceID() throws FrameGrabber.Exception {
+        new Dao().getNumberAndNameFromDB();
         //String pathname = "https://www.youtube.com/watch?v=ydZBBAPE_mw";
         // String pathname = "http://streams.videolan.org/samples/MPEG-4/video.mp4";
 //        String pathname = "https://youtu.be/FuK-6gD3h_8";
@@ -80,10 +83,11 @@ public class FaceID {
 
     public static void main(String[] args) throws FrameGrabber.Exception {
 
-         //new FaceDetectAndSave("/Users/owner/Desktop/Images/");
-        //FaceRecognizingAndTraning faceRecognizingAndTraning =new FaceRecognizingAndTraning();
+        // new project.FaceDetectAndSave("/Users/owner/Desktop/Images/");
+       //project.FaceRecognizingAndTraning faceRecognizingAndTraning =new project.FaceRecognizingAndTraning();
         // faceRecognizingAndTraning.traning();
         new FaceID();
+
     }
 
 }

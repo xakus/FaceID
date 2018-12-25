@@ -1,4 +1,7 @@
+package project;
+
 import org.bytedeco.javacpp.opencv_core;
+import utility.ConsAndStatic;
 
 import static org.bytedeco.javacpp.opencv_core.*;
 import static org.bytedeco.javacpp.opencv_imgcodecs.imwrite;
@@ -43,8 +46,8 @@ public class FaceOperation {
         return resizeImage;
     }
     public  void saveImage(IplImage img, String name){
-
-        String pathAndName=ConsAndStatic.TRANING_AND_SAVE_PATH+count+"-"+name+".jpg";
+        ConsAndStatic.getName.put(count,name.split("#")[0]);
+        String pathAndName= ConsAndStatic.TRANING_AND_SAVE_PATH+count+"-"+name+".jpg";
         imwrite(pathAndName,cvarrToMat(img));
         count++;
     }

@@ -1,5 +1,8 @@
+package project;
+
 import org.bytedeco.javacpp.opencv_core;
 import org.bytedeco.javacpp.opencv_objdetect;
+import utility.ConsAndStatic;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -10,7 +13,6 @@ import static org.bytedeco.javacpp.opencv_core.cvLoad;
 import static org.bytedeco.javacpp.opencv_core.cvarrToMat;
 import static org.bytedeco.javacpp.opencv_imgproc.putText;
 import static org.bytedeco.javacpp.opencv_imgproc.rectangle;
-import static org.bytedeco.javacpp.opencv_objdetect.CV_HAAR_STAGE_MAX;
 
 public class FaceDetect {
     opencv_objdetect.CvHaarClassifierCascade cascade;
@@ -50,8 +52,8 @@ public class FaceDetect {
                 opencv_core.IplImage image =operation.faceCut(img,x,y,w,h);
                 opencv_core.IplImage image1=operation.resizeImage(image);
                 FacePredict pr=predict.facePredict(image1);
-                if(pr.getConfidence().get()<ConsAndStatic.DETECT_LIMIT) {
-                    text = "N=" + pr.getLabel().get() + " P=" + pr.getConfidence().get();
+                if(pr.getConfidence().get()< ConsAndStatic.DETECT_LIMIT) {
+                    text = "N=" +ConsAndStatic.getName.get( pr.getLabel().get()) + " P=" + pr.getConfidence().get();
                     System.out.println(text);
                 }else{
                     text = "N=" + -1 + " P=" + pr.getConfidence().get();
@@ -59,7 +61,7 @@ public class FaceDetect {
 
 
                 rectangle(cvarrToMat(img), new opencv_core.Rect(x, y, w, h), new opencv_core.Scalar(0, 255, 128, 0), 1, 0, 0);
-                putText(cvarrToMat(img), text, new opencv_core.Point(x, (y + h + 15)), 1, 1.0, new opencv_core.Scalar(0, 255, 50, 0));
+                putText(cvarrToMat(img), text, new opencv_core.Point(x, (y + h + 15)), 1, 1.0, new opencv_core.Scalar(0, 0, 255, 0));
             }
         }
     }
