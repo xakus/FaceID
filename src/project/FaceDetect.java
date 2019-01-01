@@ -2,7 +2,7 @@ package project;
 
 import org.bytedeco.javacpp.opencv_core;
 import org.bytedeco.javacpp.opencv_objdetect;
-import utility.ConsAndStatic;
+import utility.Const;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -20,8 +20,8 @@ public class FaceDetect {
     List<opencv_core.CvRect> cvRect;
     FaceRecognizingAndTraning predict;
     public FaceDetect() {
-        String f = ConsAndStatic.CASCAD_XML_FILE;
-        String f2= ConsAndStatic.CASCAD_XML_FILE2;
+        String f = Const.CASCAD_XML_FILE;
+        String f2= Const.CASCAD_XML_FILE2;
         cascadef = new opencv_objdetect.CascadeClassifier(f2);
         cascade = new opencv_objdetect.CvHaarClassifierCascade(cvLoad(f));
         predict=new FaceRecognizingAndTraning();
@@ -73,8 +73,8 @@ public class FaceDetect {
                 opencv_core.IplImage image =operation.faceCut(img,x,y,w,h);
                 opencv_core.IplImage image1=operation.resizeImage(image);
                 FacePredict pr=predict.facePredict(image1);
-                if(pr.getConfidence().get()< ConsAndStatic.DETECT_LIMIT) {
-                    text = "N=" +ConsAndStatic.getName.get( pr.getLabel().get()) + " P=" + pr.getConfidence().get();
+                if(pr.getConfidence().get()< Const.DETECT_LIMIT) {
+                    text = "N=" + Const.getName.get( pr.getLabel().get()) + " P=" + pr.getConfidence().get();
                     System.out.println(text);
                 }else{
                     text = "N=" + -1 + " P=" + pr.getConfidence().get();
@@ -98,8 +98,8 @@ public class FaceDetect {
                 opencv_core.IplImage image =operation.faceCut(img,x,y,w,h);
                 opencv_core.IplImage image1=operation.resizeImage(image);
                 FacePredict pr=predict.facePredict(image1);
-                if(pr.getConfidence().get()< ConsAndStatic.DETECT_LIMIT) {
-                    text = "N=" +ConsAndStatic.getName.get( pr.getLabel().get()) + " P=" + pr.getConfidence().get();
+                if(pr.getConfidence().get()< Const.DETECT_LIMIT) {
+                    text = "N=" + Const.getName.get( pr.getLabel().get()) + " P=" + pr.getConfidence().get();
                     System.out.println(text);
                 }else{
                     text = "N=" + -1 + " P=" + pr.getConfidence().get();

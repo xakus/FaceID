@@ -3,8 +3,7 @@ package project;
 import dao.Dao;
 import org.bytedeco.javacpp.opencv_core;
 import org.bytedeco.javacpp.opencv_objdetect;
-import org.ibex.nestedvm.util.Seekable;
-import utility.ConsAndStatic;
+import utility.Const;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -13,7 +12,6 @@ import java.util.List;
 import static org.bytedeco.javacpp.opencv_core.LDA.subspaceProject;
 import static org.bytedeco.javacpp.opencv_core.LDA.subspaceReconstruct;
 import static org.bytedeco.javacpp.opencv_imgcodecs.cvLoadImage;
-import static org.bytedeco.javacpp.opencv_core.*;
 
 public class FaceDetectAndSave {
     String inPath;
@@ -85,7 +83,7 @@ public class FaceDetectAndSave {
     }
 
     private void clearDir(){
-        File file=new File(ConsAndStatic.TRANING_AND_SAVE_PATH);
+        File file=new File(Const.TRANING_AND_SAVE_PATH);
         FilenameFilter filter = new FilenameFilter() {
             @Override
             public boolean accept(File dir, String name) {

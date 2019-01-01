@@ -5,7 +5,7 @@ import org.bytedeco.javacv.OpenCVFrameConverter;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ConsAndStatic {
+public class Const {
   public static final String PATH_TO_THE_FOLDER_WITH_RAW_PICTURES=System.getProperty("user.home")+"/Desktop/Images/";
   public static final String CASCAD_XML_FILE2="/Users/owner/Documents/GitHub/FaceID/res/face2.xml";
   public static final String CASCAD_XML_FILE="/Users/owner/Documents/GitHub/FaceID/res/face.xml";

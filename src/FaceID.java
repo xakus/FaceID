@@ -3,7 +3,7 @@ import dao.Dao;
 import org.bytedeco.javacpp.opencv_core.*;
 import org.bytedeco.javacv.*;
 import project.FaceDetect;
-import utility.ConsAndStatic;
+import utility.Const;
 
 
 import static org.bytedeco.javacpp.opencv_objdetect.*;
@@ -80,7 +80,7 @@ public class FaceID {
 
     public static void main(String[] args) throws FrameGrabber.Exception {
 
-        new project.FaceDetectAndSave(ConsAndStatic.PATH_TO_THE_FOLDER_WITH_RAW_PICTURES);
+        new project.FaceDetectAndSave(Const.PATH_TO_THE_FOLDER_WITH_RAW_PICTURES);
         project.FaceRecognizingAndTraning faceRecognizingAndTraning = new project.FaceRecognizingAndTraning();
         faceRecognizingAndTraning.traning();
         new FaceID();

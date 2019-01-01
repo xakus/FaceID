@@ -1,7 +1,7 @@
 package project;
 
 import org.bytedeco.javacpp.*;
-import utility.ConsAndStatic;
+import utility.Const;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -16,10 +16,10 @@ public class FaceRecognizingAndTraning {
     opencv_face.FaceRecognizer faceRecognizer;
 
     public FaceRecognizingAndTraning() {
-        this.traningAndSavePath = ConsAndStatic.TRANING_AND_SAVE_PATH;
+        this.traningAndSavePath = Const.TRANING_AND_SAVE_PATH;
         faceRecognizer = opencv_face.FisherFaceRecognizer.create();
         try {
-            File xml = new File(traningAndSavePath+ ConsAndStatic.XML_FILE_NAME);
+            File xml = new File(traningAndSavePath+ Const.XML_FILE_NAME);
             faceRecognizer.read(xml.getAbsolutePath());
         }catch (Exception e){
             System.out.println("XML DONT FIND");
@@ -52,7 +52,7 @@ public class FaceRecognizingAndTraning {
           for(int i=0;i<10;i++) {
               faceRecognizer.train(images, labels);
           }
-           faceRecognizer.save(traningAndSavePath + ConsAndStatic.XML_FILE_NAME);
+           faceRecognizer.save(traningAndSavePath + Const.XML_FILE_NAME);
 
     }
 
