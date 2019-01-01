@@ -4,10 +4,9 @@ import org.bytedeco.javacpp.opencv_core;
 import utility.ConsAndStatic;
 
 import static org.bytedeco.javacpp.opencv_core.*;
+import static org.bytedeco.javacpp.opencv_imgcodecs.cvDecodeImage;
 import static org.bytedeco.javacpp.opencv_imgcodecs.imwrite;
-import static org.bytedeco.javacpp.opencv_imgproc.CV_BGR2GRAY;
-import static org.bytedeco.javacpp.opencv_imgproc.cvCvtColor;
-import static org.bytedeco.javacpp.opencv_imgproc.cvResize;
+import static org.bytedeco.javacpp.opencv_imgproc.*;
 
 public class FaceOperation {
 
@@ -25,11 +24,11 @@ public class FaceOperation {
 
         IplImage image = getSubImage(grayImage, x, y, w, h);
 
-
+       image=equalizeHistogram(image);
       return image;
     }
 
-    public opencv_core.IplImage getSubImage(opencv_core.IplImage img, int x, int y, int w, int h) {
+    public IplImage getSubImage(opencv_core.IplImage img, int x, int y, int w, int h) {
 
 
 
@@ -45,11 +44,21 @@ public class FaceOperation {
         cvResize(img, resizeImage);
         return resizeImage;
     }
+    public IplImage equalizeHistogram(IplImage img){
+        IplImage image;
+        Mat src, dst = new Mat();
+        src=cvarrToMat(img);
+        equalizeHist(src,dst);
+        image= new IplImage(dst);
+        return image;
+    }
+
     public  void saveImage(IplImage img, String name){
         ConsAndStatic.getName.put(count,name.split("#")[0]);
         String pathAndName= ConsAndStatic.TRANING_AND_SAVE_PATH+count+"-"+name+".jpg";
         imwrite(pathAndName,cvarrToMat(img));
         count++;
     }
+
 
 }

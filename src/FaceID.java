@@ -3,11 +3,8 @@ import dao.Dao;
 import org.bytedeco.javacpp.opencv_core.*;
 import org.bytedeco.javacv.*;
 import project.FaceDetect;
-import utility.DBC;
+import utility.ConsAndStatic;
 
-
-import java.sql.ResultSet;
-import java.sql.SQLException;
 
 import static org.bytedeco.javacpp.opencv_objdetect.*;
 
@@ -61,13 +58,13 @@ public class FaceID {
         canvasFrame.setSize(frame.imageWidth, frame.imageHeight);
         FaceDetect faceDetect = new FaceDetect();
 
-        while (canvasFrame.isVisible() && (frame = grabber.grab()) != null && frame!=null && !grabber.isDeinterlace()/*(frame = converter.convert(iplImage)) != null*/) {
+        while (canvasFrame.isVisible() && (frame = grabber.grab()) != null && frame != null && !grabber.isDeinterlace()/*(frame = converter.convert(iplImage)) != null*/) {
             img = converter.convert(frame);
-            //faceDetect(img);
-            CvSeq seq = faceDetect.faceDetect(img, 1.4, 5, CV_HAAR_FIND_BIGGEST_OBJECT);
-//System.out.println(System.currentTimeMillis());
+            CvSeq seq = faceDetect.faceDetect(img, 1.3, 5, CV_HAAR_FIND_BIGGEST_OBJECT);
             faceDetect.faceRectangleAndText(img, seq);
 
+//           List<Rect> rects= faceDetect.faceDetect2(img);
+//            faceDetect.faceRectangleAndText2(img,rects);
             canvasFrame.showImage(converter.convert(img));
 
 
@@ -83,9 +80,9 @@ public class FaceID {
 
     public static void main(String[] args) throws FrameGrabber.Exception {
 
-        // new project.FaceDetectAndSave("/Users/owner/Desktop/Images/");
-       //project.FaceRecognizingAndTraning faceRecognizingAndTraning =new project.FaceRecognizingAndTraning();
-        // faceRecognizingAndTraning.traning();
+        new project.FaceDetectAndSave(ConsAndStatic.PATH_TO_THE_FOLDER_WITH_RAW_PICTURES);
+        project.FaceRecognizingAndTraning faceRecognizingAndTraning = new project.FaceRecognizingAndTraning();
+        faceRecognizingAndTraning.traning();
         new FaceID();
 
     }

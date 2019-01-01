@@ -49,9 +49,11 @@ public class FaceRecognizingAndTraning {
             labelBuffer.put(name, name);
 
         }
+          for(int i=0;i<10;i++) {
+              faceRecognizer.train(images, labels);
+          }
+           faceRecognizer.save(traningAndSavePath + ConsAndStatic.XML_FILE_NAME);
 
-        faceRecognizer.train(images, labels);
-        faceRecognizer.save(traningAndSavePath + ConsAndStatic.XML_FILE_NAME);
     }
 
     public FacePredict facePredict(IplImage img) {
