@@ -9,8 +9,6 @@ import java.io.File;
 import java.io.FilenameFilter;
 import java.util.List;
 
-import static org.bytedeco.javacpp.opencv_core.LDA.subspaceProject;
-import static org.bytedeco.javacpp.opencv_core.LDA.subspaceReconstruct;
 import static org.bytedeco.javacpp.opencv_imgcodecs.cvLoadImage;
 
 public class FaceDetectAndSave {
@@ -38,7 +36,8 @@ public class FaceDetectAndSave {
             faceDetect.faceDetect(img, 1.3, 5, opencv_objdetect.CV_HAAR_FIND_BIGGEST_OBJECT);
             List<opencv_core.CvRect> cvRects = faceDetect.getCvRect();
             for (opencv_core.CvRect cvRect : cvRects) {
-                opencv_core.IplImage image1 = faceOperation.faceCut(img, cvRect.x(), cvRect.y(), cvRect.width(), cvRect.height());
+                double size=5.0;
+                opencv_core.IplImage image1 = faceOperation.faceCut(img, (int)(cvRect.x()), (int)(cvRect.y()), (int)(cvRect.width()), (int)(cvRect.height()));
                 opencv_core.IplImage image2 = faceOperation.resizeImage(image1);
 
                 faceOperation.saveImage(image2, name);

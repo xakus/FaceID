@@ -21,6 +21,7 @@ public class FaceRecognizingAndTraning {
         try {
             File xml = new File(traningAndSavePath+ Const.XML_FILE_NAME);
             faceRecognizer.read(xml.getAbsolutePath());
+
         }catch (Exception e){
             System.out.println("XML DONT FIND");
         }
@@ -49,11 +50,11 @@ public class FaceRecognizingAndTraning {
             labelBuffer.put(name, name);
 
         }
-          for(int i=0;i<10;i++) {
-              faceRecognizer.train(images, labels);
-          }
-           faceRecognizer.save(traningAndSavePath + Const.XML_FILE_NAME);
 
+              faceRecognizer.train(images,labels);
+
+           faceRecognizer.save(traningAndSavePath + Const.XML_FILE_NAME);
+        
     }
 
     public FacePredict facePredict(IplImage img) {

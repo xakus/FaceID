@@ -4,7 +4,6 @@ import org.bytedeco.javacpp.opencv_core;
 import utility.Const;
 
 import static org.bytedeco.javacpp.opencv_core.*;
-import static org.bytedeco.javacpp.opencv_imgcodecs.cvDecodeImage;
 import static org.bytedeco.javacpp.opencv_imgcodecs.imwrite;
 import static org.bytedeco.javacpp.opencv_imgproc.*;
 
@@ -18,9 +17,14 @@ public class FaceOperation {
     }
 
     public IplImage faceCut(opencv_core.IplImage img, int x, int y, int w, int h) {
-        IplImage grayImage = IplImage.create(img.width(),
-                img.height(), IPL_DEPTH_8U, 1);
-        cvCvtColor(img, grayImage, CV_BGR2GRAY);
+        Mat mat=new Mat();
+        GaussianBlur(cvarrToMat(img),mat,new Size(5,5),10);
+        IplImage ima=new IplImage(mat);
+
+        IplImage grayImage = IplImage.create(ima.width(),
+                ima.height(), IPL_DEPTH_8U, 1);
+        cvCvtColor(ima, grayImage, CV_BGR2GRAY);
+
 
         IplImage image = getSubImage(grayImage, x, y, w, h);
 
@@ -29,9 +33,6 @@ public class FaceOperation {
     }
 
     public IplImage getSubImage(opencv_core.IplImage img, int x, int y, int w, int h) {
-
-
-
         opencv_core.IplImage iplImage = opencv_core.IplImage.create(w, h, img.depth(), img.nChannels());
         cvSetImageROI(img, cvRect(x, y, w, h));
         cvCopy(img, iplImage);

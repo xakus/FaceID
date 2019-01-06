@@ -32,6 +32,7 @@ public class FaceDetect {
         opencv_core.CvMemStorage memStorage = opencv_core.CvMemStorage.create();
 
         opencv_core.CvSeq face = cvHaarDetectObjects(img, cascade, memStorage, scale_factor, min_neighbors, CV_HAAR_FLAG);
+
         int total = face.total();
         cvRect=new LinkedList<>();
         if (total > 0) {
