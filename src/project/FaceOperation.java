@@ -1,6 +1,7 @@
 package project;
 
 import org.bytedeco.javacpp.opencv_core;
+
 import utility.Const;
 
 import static org.bytedeco.javacpp.opencv_core.*;
@@ -18,7 +19,7 @@ public class FaceOperation {
 
     public IplImage faceCut(opencv_core.IplImage img, int x, int y, int w, int h) {
         Mat mat=new Mat();
-        GaussianBlur(cvarrToMat(img),mat,new Size(5,5),10);
+        GaussianBlur(cvarrToMat(img),mat,new Size(5,5),1);
         IplImage ima=new IplImage(mat);
 
         IplImage grayImage = IplImage.create(ima.width(),
@@ -28,7 +29,7 @@ public class FaceOperation {
 
         IplImage image = getSubImage(grayImage, x, y, w, h);
 
-       image=equalizeHistogram(image);
+       image=clahe(image);
       return image;
     }
 
@@ -53,6 +54,17 @@ public class FaceOperation {
         image= new IplImage(dst);
         return image;
     }
+
+public IplImage clahe(IplImage img){
+        Mat mat1=cvarrToMat(img);
+        Mat mat2=new Mat();
+        CLAHE clahe= createCLAHE();
+        clahe.setClipLimit(1);
+        clahe.apply(mat1,mat2);
+        IplImage img2=new IplImage(mat2);
+        return  img2;
+
+}
 
     public  void saveImage(IplImage img, String name){
         Const.getName.put(count,name.split("#")[0]);
