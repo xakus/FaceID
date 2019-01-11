@@ -1,12 +1,12 @@
 
 import dao.Dao;
-import org.bytedeco.javacpp.opencv_core.*;
+import org.bytedeco.javacpp.opencv_core.CvSeq;
+import org.bytedeco.javacpp.opencv_core.IplImage;
 import org.bytedeco.javacv.*;
 import project.FaceDetect;
 import utility.Const;
 
-
-import static org.bytedeco.javacpp.opencv_objdetect.*;
+import static org.bytedeco.javacpp.opencv_objdetect.CV_HAAR_FIND_BIGGEST_OBJECT;
 
 /**
  * @author Murad

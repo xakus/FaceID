@@ -39,9 +39,9 @@ public class FaceDetectAndSave {
                 double size=5.0;
                 opencv_core.IplImage image1 = faceOperation.faceCut(img, (int)(cvRect.x()), (int)(cvRect.y()), (int)(cvRect.width()), (int)(cvRect.height()));
                 opencv_core.IplImage image2 = faceOperation.resizeImage(image1);
-
-                faceOperation.saveImage(image2, name);
-                System.out.println("Name= " + name);
+               for (int c=0;c<Const.IMAGE_COPY;c++){
+                faceOperation.saveImage(image2, name+"#"+c);
+                System.out.println("Name= " + name);}
             }
 
         }
