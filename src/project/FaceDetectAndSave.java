@@ -4,6 +4,7 @@ import dao.Dao;
 import org.bytedeco.javacpp.opencv_core;
 import org.bytedeco.javacpp.opencv_objdetect;
 import utility.Const;
+import utility.EyeCenterAndAngle;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -18,6 +19,7 @@ public class FaceDetectAndSave {
         this.inPath = inPath;
         clearDir();
         File root = new File(inPath);
+        EyeDetect eyeDetect =new EyeDetect();
         FilenameFilter filter = new FilenameFilter() {
             @Override
             public boolean accept(File dir, String name) {
@@ -26,7 +28,7 @@ public class FaceDetectAndSave {
             }
         };
         File[] imageFiles = root.listFiles(filter);
-        FaceOperation faceOperation = new FaceOperation();
+        Operation faceOperation = new Operation();
         for (File image : imageFiles) {
             opencv_core.IplImage img = cvLoadImage(image.getAbsolutePath());
 
@@ -37,10 +39,20 @@ public class FaceDetectAndSave {
             List<opencv_core.CvRect> cvRects = faceDetect.getCvRect();
             for (opencv_core.CvRect cvRect : cvRects) {
                 double size=5.0;
-                opencv_core.IplImage image1 = faceOperation.faceCut(img, (int)(cvRect.x()), (int)(cvRect.y()), (int)(cvRect.width()), (int)(cvRect.height()));
-                opencv_core.IplImage image2 = faceOperation.resizeImage(image1);
+                opencv_core.IplImage image1 = faceOperation.faceCut(img, cvRect.x(), cvRect.y(), cvRect.width(),cvRect.height());
+
+                List<opencv_core.Rect> rects= eyeDetect.eyeDetect2(img);
+                EyeCenterAndAngle cAA=Operation.angle(rects);
+                 System.out.println(cAA.getAngle());
+                opencv_core.Point2f point2f=new opencv_core.Point2f((cAA.getEye1().x()+cAA.getEye2().x())/2.0f,(cAA.getEye1().y()+cAA.getEye2().y())/2.0f);
+                opencv_core.IplImage im1= faceOperation.rotate(img,point2f,cAA.getAngle());
+                opencv_core.IplImage im2=faceOperation.faceCut(im1, cvRect.x(), cvRect.y(), cvRect.width(),cvRect.height());
+                opencv_core.IplImage image2 =im1;// faceOperation.resizeImage(im2);
                for (int c=0;c<Const.IMAGE_COPY;c++){
+
                 faceOperation.saveImage(image2, name+"#"+c);
+                   opencv_core.IplImage mirImage= faceOperation.mirror(image2);
+                   faceOperation.saveImage(mirImage, name+"#"+c+"M");
                 System.out.println("Name= " + name);}
             }
 
@@ -60,7 +72,7 @@ public class FaceDetectAndSave {
             }
         };
         File[] imageFiles = root.listFiles(filter);
-        FaceOperation faceOperation = new FaceOperation();
+        Operation faceOperation = new Operation();
         for (File image : imageFiles) {
             opencv_core.IplImage img = cvLoadImage(image.getAbsolutePath());
 
@@ -74,6 +86,7 @@ public class FaceDetectAndSave {
                 opencv_core.IplImage image2 = faceOperation.resizeImage(image1);
 
                 faceOperation.saveImage(image2, name);
+
                 System.out.println("Name= " + name);
             }
 

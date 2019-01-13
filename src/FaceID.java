@@ -1,11 +1,17 @@
 
 import dao.Dao;
+import org.bytedeco.javacpp.opencv_core;
 import org.bytedeco.javacpp.opencv_core.CvSeq;
 import org.bytedeco.javacpp.opencv_core.IplImage;
 import org.bytedeco.javacv.*;
+import project.EyeDetect;
 import project.FaceDetect;
+import project.Operation;
 import utility.Const;
 
+import java.util.List;
+
+import static org.bytedeco.javacpp.opencv_imgcodecs.cvLoadImage;
 import static org.bytedeco.javacpp.opencv_objdetect.CV_HAAR_FIND_BIGGEST_OBJECT;
 
 /**
@@ -23,7 +29,7 @@ public class FaceID {
         // String pathname = "http://streams.videolan.org/samples/MPEG-4/video.mp4";
 //        String pathname = "https://youtu.be/FuK-6gD3h_8";
 //        String pathname = "/Users/owner/Downloads/videoplayback (1).mp4";
-        String im = "/Users/owner/Desktop/Images/Nermin Hebibova#7.jpg";
+        String im = "/Users/owner/Desktop/Images/Murad Salmanov#0.png";
 //        try {
 
 
@@ -45,7 +51,7 @@ public class FaceID {
         /////
 
         //IMAGE
-//          IplImage iplImage= opencv_imgcodecs.cvLoadImage(im);
+//          IplImage iplImage= cvLoadImage(im);
 //
 //          Frame frame = converter.convert(iplImage);
         //////////////////
@@ -57,17 +63,21 @@ public class FaceID {
         canvasFrame.setDefaultCloseOperation(3);
         canvasFrame.setSize(frame.imageWidth, frame.imageHeight);
         FaceDetect faceDetect = new FaceDetect();
-
-        while (canvasFrame.isVisible() && (frame = grabber.grab()) != null && frame != null && !grabber.isDeinterlace()/*(frame = converter.convert(iplImage)) != null*/) {
+        EyeDetect eyeDetect=new EyeDetect();
+        while (canvasFrame.isVisible() && (frame = grabber.grab()) != null && frame != null && !grabber.isDeinterlace()/*(frame = converter.convert(iplImage)) != null)*/) {
             img = converter.convert(frame);
             CvSeq seq = faceDetect.faceDetect(img, 1.3, 5, CV_HAAR_FIND_BIGGEST_OBJECT);
             faceDetect.faceRectangleAndText(img, seq);
 
 //           List<Rect> rects= faceDetect.faceDetect2(img);
 //            faceDetect.faceRectangleAndText2(img,rects);
+
+          //Eye
+            List<opencv_core.Rect> rects =eyeDetect.eyeDetect2(img);
+            System.out.println(Operation.angle(rects));
+            eyeDetect.eyeRectangle(img,rects);
+          //
             canvasFrame.showImage(converter.convert(img));
-
-
         }
 
 //        } catch (FrameGrabber.Exception ex) {

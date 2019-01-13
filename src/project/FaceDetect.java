@@ -20,8 +20,8 @@ public class FaceDetect {
     List<opencv_core.CvRect> cvRect;
     FaceRecognizingAndTraning predict;
     public FaceDetect() {
-        String f = Const.CASCAD_XML_FILE;
-        String f2= Const.CASCAD_XML_FILE2;
+        String f = Const.FACE_CASCAD_XML_FILE;
+        String f2= Const.FACE_CASCAD_XML_FILE2;
         cascadef = new opencv_objdetect.CascadeClassifier(f2);
         cascade = new opencv_objdetect.CvHaarClassifierCascade(cvLoad(f));
         predict=new FaceRecognizingAndTraning();
@@ -67,7 +67,7 @@ public class FaceDetect {
         if (total > 0) {
            String text="???????";
 
-            FaceOperation operation=new FaceOperation();
+            Operation operation=new Operation();
             for (int i = 0; i < total; i++) {
                 opencv_core.CvRect rect = new opencv_core.CvRect(cvGetSeqElem(cvSeq, i));
                 int x = rect.x(), y = rect.y(), w = rect.width(), h = rect.height();
@@ -92,7 +92,7 @@ public class FaceDetect {
         if (total > 0) {
             String text="???????";
 
-            FaceOperation operation=new FaceOperation();
+            Operation operation=new Operation();
             for (int i = 0; i < total; i++) {
                 opencv_core.Rect rect = rects.get(i);
                 int x = rect.x(), y = rect.y(), w = rect.width(), h = rect.height();
