@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54adffbc-001b-41b8-b24e-025ceb90f5eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/res/haarEyecascade.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/haarcascade_eye.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/EyeDetect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/Operation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utility/EyeCenterAndAngle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/db.db" beforeDir="false" afterPath="$PROJECT_DIR$/res/db.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FaceID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FaceID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project/EyeDetect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/EyeDetect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/project/FaceDetect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/FaceDetect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/project/FaceDetectAndSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/FaceDetectAndSave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/project/FaceOperation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/Operation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utility/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Const.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utility/EyeCenterAndAngle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/EyeCenterAndAngle.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,39 +24,47 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="5" />
-          <entry key="java" value="2169" />
-          <entry key="txt" value="55" />
+          <entry key="java" value="2339" />
+          <entry key="txt" value="102" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2169" />
-          <entry key="PLAIN_TEXT" value="60" />
+          <entry key="JAVA" value="2339" />
+          <entry key="PLAIN_TEXT" value="107" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="5" />
+          <entry key="java" value="6" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="5" />
+          <entry key="JAVA" value="6" />
           <entry key="XML" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FaceID.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
+            <state relative-caret-position="7">
+              <caret line="69" column="43" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,11 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utility/Const.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="81" selection-start-line="13" selection-start-column="81" selection-end-line="13" selection-end-column="81" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -82,12 +84,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/project/Operation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+            <state relative-caret-position="230">
+              <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#322#323#0" expanded="true" />
-                <element signature="e#345#346#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,12 +96,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/project/FaceDetect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-18">
-              <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+            <state relative-caret-position="191">
+              <caret line="74" column="27" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4859#4860#0" expanded="true" />
-                <element signature="e#4888#4889#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,7 +108,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/project/FaceRecognizingAndTraning.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
+            <state relative-caret-position="150">
               <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -119,11 +117,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/project/FaceDetectAndSave.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
+            <state relative-caret-position="212">
+              <caret line="45" column="52" lean-forward="true" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,11 +132,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/project/EyeDetect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-366">
-              <caret line="61" column="41" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+            <state relative-caret-position="153">
+              <caret line="92" selection-start-line="92" selection-end-line="92" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utility/EyeCenterAndAngle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="118" selection-start-line="12" selection-start-column="118" selection-end-line="12" selection-end-column="118" />
             </state>
           </provider>
         </entry>
@@ -181,14 +188,14 @@
         <option value="$PROJECT_DIR$/src/project/FaceRecognizingAndTraning.java" />
         <option value="$PROJECT_DIR$/src/project/FaceOperation.java" />
         <option value="$PROJECT_DIR$/res/haarcascade_eye.xml" />
-        <option value="$PROJECT_DIR$/src/project/FaceDetect.java" />
         <option value="$PROJECT_DIR$/res/haarEyecascade.xml" />
-        <option value="$PROJECT_DIR$/src/utility/Const.java" />
-        <option value="$PROJECT_DIR$/src/utility/EyeCenterAndAngle.java" />
-        <option value="$PROJECT_DIR$/src/FaceID.java" />
-        <option value="$PROJECT_DIR$/src/project/Operation.java" />
-        <option value="$PROJECT_DIR$/src/project/EyeDetect.java" />
         <option value="$PROJECT_DIR$/src/project/FaceDetectAndSave.java" />
+        <option value="$PROJECT_DIR$/src/utility/Const.java" />
+        <option value="$PROJECT_DIR$/src/project/EyeDetect.java" />
+        <option value="$PROJECT_DIR$/src/utility/EyeCenterAndAngle.java" />
+        <option value="$PROJECT_DIR$/src/project/FaceDetect.java" />
+        <option value="$PROJECT_DIR$/src/project/Operation.java" />
+        <option value="$PROJECT_DIR$/src/FaceID.java" />
       </list>
     </option>
   </component>
@@ -201,15 +208,13 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="649" />
+    <option name="height" value="839" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,6 +253,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -255,7 +262,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE" value="ToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547420062375" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547420209293" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -264,121 +271,6 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/res/db.db</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/FaceID.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/project/FaceDetectAndSave.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/project/FaceOperation.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/project/FaceRecognizingAndTraning.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/utility/Const.java</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -423,7 +315,9 @@
       <workItem from="1545578780194" duration="30944000" />
       <workItem from="1545684090266" duration="229000" />
       <workItem from="1545718053396" duration="12895000" />
-      <workItem from="1546298356430" duration="26835000" />
+      <workItem from="1546298356430" duration="27076000" />
+      <workItem from="1547462353316" duration="1296000" />
+      <workItem from="1547504779935" duration="3609000" />
     </task>
     <task id="LOCAL-00001" summary="Add SQLITE">
       <created>1546385318672</created>
@@ -453,12 +347,12 @@
       <option name="project" value="LOCAL" />
       <updated>1547160043241</updated>
     </task>
-    <task id="LOCAL-00005" summary="Alpha version">
-      <created>1545672186642</created>
+    <task id="LOCAL-00005" summary="Add Image rotate Eye detect, angle and befor eye">
+      <created>1547420282070</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1545672186642</updated>
+      <updated>1547420282070</updated>
     </task>
     <task id="LOCAL-00006" summary="Add SQLITE">
       <created>1545725789450</created>
@@ -488,14 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546385094889</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22320000" />
+    <option name="totallyTimeSpent" value="27466000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="649" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="839" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -509,11 +403,11 @@
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5007163" side_tool="true" weight="0.32931727" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
-      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.49785408" weight="0.32642487" />
+      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.49785408" weight="0.3253012" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" sideWeight="0.49928367" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.49426934" visible="true" weight="0.24775584" />
-      <window_info anchor="bottom" id="Debug" order="8" sideWeight="0.4985694" weight="0.39856374" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49426934" weight="0.36680055" />
+      <window_info anchor="bottom" id="Debug" order="8" sideWeight="0.4985694" weight="0.39759037" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -573,7 +467,8 @@
     <MESSAGE value="Add SQLITE" />
     <MESSAGE value="Rename Calass ConstAndStatic to Const" />
     <MESSAGE value="Add Filter CLAHE" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Filter CLAHE" />
+    <MESSAGE value="Add Image rotate Eye detect, angle and befor eye" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Image rotate Eye detect, angle and befor eye" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -583,6 +478,12 @@
           <line>43</line>
           <properties />
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/project/Operation.java</url>
+          <line>126</line>
+          <properties />
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -614,10 +515,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/FaceRecognizingAndTraning.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/utility/Const.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="81" selection-start-line="13" selection-start-column="81" selection-end-line="13" selection-end-column="81" />
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/FaceDetectAndSave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="45" column="52" lean-forward="true" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -626,55 +544,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utility/EyeCenterAndAngle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#335#336#0" expanded="true" />
-            <element signature="e#363#364#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#797#798#0" expanded="true" />
-            <element signature="e#824#825#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="12" column="118" selection-start-line="12" selection-start-column="118" selection-end-line="12" selection-end-column="118" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/project/EyeDetect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-366">
-          <caret line="61" column="41" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/Operation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-            <element signature="e#345#346#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FaceID.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
+        <state relative-caret-position="153">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -683,30 +561,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/project/FaceDetect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18">
-          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4859#4860#0" expanded="true" />
-            <element signature="e#4888#4889#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/FaceRecognizingAndTraning.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+        <state relative-caret-position="191">
+          <caret line="74" column="27" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/FaceDetectAndSave.java">
+    <entry file="file://$PROJECT_DIR$/src/project/Operation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
+        <state relative-caret-position="230">
+          <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FaceID.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7">
+          <caret line="69" column="43" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -75,10 +75,10 @@ public class FaceDetect {
                 opencv_core.IplImage image1=operation.resizeImage(image);
                 FacePredict pr=predict.facePredict(image1);
                 if(pr.getConfidence().get()< Const.DETECT_LIMIT) {
-                    text = "N=" + Const.getName.get( pr.getLabel().get()) + " P=" + pr.getConfidence().get();
+                    text = "N=" + Const.getName.get( pr.getLabel().get()) + " P=" + (100/ Math.round(pr.getConfidence().get()))+"%";
                     System.out.println(text);
                 }else{
-                    text = "N=" + -1 + " P=" + pr.getConfidence().get();
+                    text = "N=" + -1 + " P=" + (100/ pr.getConfidence().get())+"%";
                 }
 
 

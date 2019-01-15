@@ -54,7 +54,7 @@ public class Operation {
         return resizeImage;
     }
 
-    public IplImage equalizeHistogram(IplImage img) {
+    public static IplImage equalizeHistogram(IplImage img) {
         IplImage image;
         Mat src, dst = new Mat();
         src = cvarrToMat(img);
@@ -68,13 +68,13 @@ public class Operation {
         Mat mat2 = new Mat();
         CLAHE clahe = createCLAHE();
         clahe.setClipLimit(1);
-        clahe.setTilesGridSize(new Size(10, 10));
+        clahe.setTilesGridSize(new Size(5, 5));
         clahe.apply(mat1, mat2);
         IplImage img2 = new IplImage(mat2);
         return img2;
 
     }
-    public IplImage rotate(IplImage img,double angle){
+    public static IplImage rotate(IplImage img,double angle){
         Mat mat1=cvarrToMat(img);
         Mat mat2=new Mat();
         Point2f point2f=new Point2f(img.width()/2,img.height()/2);
@@ -85,7 +85,7 @@ public class Operation {
         IplImage image=new IplImage(mat2);
         return image;
     }
-    public IplImage rotate(IplImage img,double x,double y,double angle){
+    public static IplImage rotate(IplImage img,double x,double y,double angle){
         Mat mat1=cvarrToMat(img);
         Mat mat2=new Mat();
         Point2f point2f=new Point2f((int)x,(int)y);
@@ -95,7 +95,8 @@ public class Operation {
                 opencv_imgproc.INTER_LINEAR,opencv_core.BORDER_TRANSPARENT,new Scalar(0,0,0,255));
         IplImage image=new IplImage(mat2);
         return image;
-    }public IplImage rotate(IplImage img,Point2f poin,double angle){
+    }
+    public static IplImage rotate(IplImage img,Point2f poin,double angle){
         Mat mat1=cvarrToMat(img);
         Mat mat2=new Mat();
 

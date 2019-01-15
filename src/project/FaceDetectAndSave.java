@@ -47,7 +47,7 @@ public class FaceDetectAndSave {
                 opencv_core.Point2f point2f=new opencv_core.Point2f((cAA.getEye1().x()+cAA.getEye2().x())/2.0f,(cAA.getEye1().y()+cAA.getEye2().y())/2.0f);
                 opencv_core.IplImage im1= faceOperation.rotate(img,point2f,cAA.getAngle());
                 opencv_core.IplImage im2=faceOperation.faceCut(im1, cvRect.x(), cvRect.y(), cvRect.width(),cvRect.height());
-                opencv_core.IplImage image2 =im1;// faceOperation.resizeImage(im2);
+                opencv_core.IplImage image2 = faceOperation.resizeImage(im2);
                for (int c=0;c<Const.IMAGE_COPY;c++){
 
                 faceOperation.saveImage(image2, name+"#"+c);

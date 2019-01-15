@@ -8,11 +8,12 @@ import project.EyeDetect;
 import project.FaceDetect;
 import project.Operation;
 import utility.Const;
+import utility.EyeCenterAndAngle;
 
 import java.util.List;
 
 import static org.bytedeco.javacpp.opencv_imgcodecs.cvLoadImage;
-import static org.bytedeco.javacpp.opencv_objdetect.CV_HAAR_FIND_BIGGEST_OBJECT;
+import static org.bytedeco.javacpp.opencv_objdetect.*;
 
 /**
  * @author Murad
@@ -29,7 +30,7 @@ public class FaceID {
         // String pathname = "http://streams.videolan.org/samples/MPEG-4/video.mp4";
 //        String pathname = "https://youtu.be/FuK-6gD3h_8";
 //        String pathname = "/Users/owner/Downloads/videoplayback (1).mp4";
-        String im = "/Users/owner/Desktop/Images/Murad Salmanov#0.png";
+        String im = "/Users/owner/Desktop/Images/Niyal Huseynova.png";
 //        try {
 
 
@@ -64,20 +65,26 @@ public class FaceID {
         canvasFrame.setSize(frame.imageWidth, frame.imageHeight);
         FaceDetect faceDetect = new FaceDetect();
         EyeDetect eyeDetect=new EyeDetect();
-        while (canvasFrame.isVisible() && (frame = grabber.grab()) != null && frame != null && !grabber.isDeinterlace()/*(frame = converter.convert(iplImage)) != null)*/) {
+        while (canvasFrame.isVisible() && (frame = grabber.grab()) != null && frame != null && !grabber.isDeinterlace()/*(frame = converter.convert(iplImage)) != null*/) {
+
             img = converter.convert(frame);
-            CvSeq seq = faceDetect.faceDetect(img, 1.3, 5, CV_HAAR_FIND_BIGGEST_OBJECT);
-            faceDetect.faceRectangleAndText(img, seq);
+
 
 //           List<Rect> rects= faceDetect.faceDetect2(img);
 //            faceDetect.faceRectangleAndText2(img,rects);
 
           //Eye
             List<opencv_core.Rect> rects =eyeDetect.eyeDetect2(img);
-            System.out.println(Operation.angle(rects));
-            eyeDetect.eyeRectangle(img,rects);
+            EyeCenterAndAngle angle=Operation.angle(rects);
+            System.out.println(angle.getAngle()+"");
+             img = Operation.rotate(img,angle.getCenterPoint(),angle.getAngle());
+
           //
+            CvSeq seq = faceDetect.faceDetect(img, 1.3, 5, CV_HAAR_FEATURE_MAX);
+            faceDetect.faceRectangleAndText(img, seq);
+            eyeDetect.eyeRectangle(img,rects);
             canvasFrame.showImage(converter.convert(img));
+
         }
 
 //        } catch (FrameGrabber.Exception ex) {
@@ -90,9 +97,9 @@ public class FaceID {
 
     public static void main(String[] args) throws FrameGrabber.Exception {
 
-        new project.FaceDetectAndSave(Const.PATH_TO_THE_FOLDER_WITH_RAW_PICTURES);
-        project.FaceRecognizingAndTraning faceRecognizingAndTraning = new project.FaceRecognizingAndTraning();
-        faceRecognizingAndTraning.traning();
+        //new project.FaceDetectAndSave(Const.PATH_TO_THE_FOLDER_WITH_RAW_PICTURES);
+        //project.FaceRecognizingAndTraning faceRecognizingAndTraning = new project.FaceRecognizingAndTraning();
+        //faceRecognizingAndTraning.traning();
         new FaceID();
 
     }

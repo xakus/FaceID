@@ -52,7 +52,7 @@ public class EyeDetect {
         opencv_core.Size minSize=new opencv_core.Size(10,10);
         opencv_core.Size maxSize=new opencv_core.Size(300,300);
 
-        cascadef.detectMultiScale(cvarrToMat(img), rects, 1.3, 6, CV_HAAR_MAGIC_VAL,minSize,maxSize );
+        cascadef.detectMultiScale(cvarrToMat(img), rects, 1.2, 4, CV_HAAR_MAGIC_VAL,minSize,maxSize );
         List<opencv_core.Rect> cvRect = new LinkedList<>();
 
         if (rects.size() > 0) {

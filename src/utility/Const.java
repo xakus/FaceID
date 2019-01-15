@@ -17,7 +17,7 @@ public class Const {
   public  static final String XML_FILE_NAME="traning.xml";
   public static final String TRANING_AND_SAVE_PATH=System.getProperty("user.home")+"/Desktop/face_images/";
   public static final int FACE_RESIZE_WIDTH=512,FACE_RESIZE_HEGHT=512;
-  public static final int DETECT_LIMIT=10000;
+  public static final int DETECT_LIMIT=20;
   public static Map<Integer,String> getName=new HashMap<>();
 
 }
