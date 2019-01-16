@@ -1,4 +1,3 @@
-
 import dao.Dao;
 import org.bytedeco.javacpp.opencv_core;
 import org.bytedeco.javacpp.opencv_core.CvSeq;
@@ -29,16 +28,17 @@ public class FaceID {
         //String pathname = "https://www.youtube.com/watch?v=ydZBBAPE_mw";
         // String pathname = "http://streams.videolan.org/samples/MPEG-4/video.mp4";
 //        String pathname = "https://youtu.be/FuK-6gD3h_8";
-//        String pathname = "/Users/owner/Downloads/videoplayback (1).mp4";
+        String pathname = "/Users/owner/Desktop/Images/MOV_22051.mp4";
         String im = "/Users/owner/Desktop/Images/Niyal Huseynova.png";
 //        try {
 
 
         ///IP_CAM_AND_VIDEO
 //            FFmpegFrameGrabber grabber=new FFmpegFrameGrabber(pathname);
-//            grabber.setAudioStream(0);
+//            grabber.setAudioStream(2);
+//            grabber.setAudioChannels(2);
 //            grabber.start();
-//            grabber.setFrameNumber(4000);
+//            grabber.setFrameNumber(400);
 //
 //
 //
@@ -74,15 +74,15 @@ public class FaceID {
 //            faceDetect.faceRectangleAndText2(img,rects);
 
           //Eye
-            List<opencv_core.Rect> rects =eyeDetect.eyeDetect2(img);
-            EyeCenterAndAngle angle=Operation.angle(rects);
-            System.out.println(angle.getAngle()+"");
-             img = Operation.rotate(img,angle.getCenterPoint(),angle.getAngle());
+            //List<opencv_core.Rect> rects =eyeDetect.eyeDetect2(img);
+           // EyeCenterAndAngle angle=Operation.angle(rects);
+           // System.out.println(angle.getAngle()+"");
+           //  img = Operation.rotate(img,angle.getCenterPoint(),angle.getAngle());
 
           //
             CvSeq seq = faceDetect.faceDetect(img, 1.3, 5, CV_HAAR_FEATURE_MAX);
             faceDetect.faceRectangleAndText(img, seq);
-            eyeDetect.eyeRectangle(img,rects);
+           // eyeDetect.eyeRectangle(img,rects);
             canvasFrame.showImage(converter.convert(img));
 
         }
@@ -97,9 +97,9 @@ public class FaceID {
 
     public static void main(String[] args) throws FrameGrabber.Exception {
 
-        //new project.FaceDetectAndSave(Const.PATH_TO_THE_FOLDER_WITH_RAW_PICTURES);
-        //project.FaceRecognizingAndTraning faceRecognizingAndTraning = new project.FaceRecognizingAndTraning();
-        //faceRecognizingAndTraning.traning();
+        new project.FaceDetectAndSave(Const.PATH_TO_THE_FOLDER_WITH_RAW_PICTURES);
+        project.FaceRecognizingAndTraning faceRecognizingAndTraning = new project.FaceRecognizingAndTraning();
+        faceRecognizingAndTraning.traning();
         new FaceID();
 
     }

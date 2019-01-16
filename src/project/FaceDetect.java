@@ -39,7 +39,11 @@ public class FaceDetect {
 
             for (int i = 0; i < total; i++) {
                 opencv_core.CvRect rect = new opencv_core.CvRect(cvGetSeqElem(face, i));
-                cvRect.add(rect);
+                int h = rect.height()-rect.height()/5;
+                int w = rect.width()-((int)(h/1.618)/2);
+                int x = rect.x()+((int)(h/1.618)/2)/2, y = rect.y()+(rect.height()/5)/2;
+                opencv_core.CvRect rect2=new opencv_core.CvRect(x,y,w,h);
+                cvRect.add(rect2);
             }
         }
         return face;
@@ -70,12 +74,19 @@ public class FaceDetect {
             Operation operation=new Operation();
             for (int i = 0; i < total; i++) {
                 opencv_core.CvRect rect = new opencv_core.CvRect(cvGetSeqElem(cvSeq, i));
-                int x = rect.x(), y = rect.y(), w = rect.width(), h = rect.height();
+               int h = rect.height()-rect.height()/5;
+               int w = rect.width()-((int)(h/1.618)/2);
+                int x = rect.x()+((int)(h/1.618)/2)/2, y = rect.y()+(rect.height()/5)/2;
+                //int dh=h/5;
+                //h=h-dh;
+//                y+=dh/2;
+//                x=x+((int)(h/1.618)/2)/2;
+//                w= w-
                 opencv_core.IplImage image =operation.faceCut(img,x,y,w,h);
                 opencv_core.IplImage image1=operation.resizeImage(image);
                 FacePredict pr=predict.facePredict(image1);
-                if(pr.getConfidence().get()< Const.DETECT_LIMIT) {
-                    text = "N=" + Const.getName.get( pr.getLabel().get()) + " P=" + (100/ Math.round(pr.getConfidence().get()))+"%";
+                if(pr.getConfidence().get()< Const.DETECT_LIMIT||true) {
+                    text = "N=" + Const.getName.get( pr.getLabel().get()) + " P=" +pr.getConfidence().get()+"%";
                     System.out.println(text);
                 }else{
                     text = "N=" + -1 + " P=" + (100/ pr.getConfidence().get())+"%";
