@@ -17,7 +17,7 @@ public class FaceRecognizingAndTraning {
 
     public FaceRecognizingAndTraning() {
         this.traningAndSavePath = Const.TRANING_AND_SAVE_PATH;
-        faceRecognizer = opencv_face.LBPHFaceRecognizer.create();
+        faceRecognizer = opencv_face.LBPHFaceRecognizer.create(1,1,1000,1000,Double.MAX_VALUE);
         try {
             File xml = new File(traningAndSavePath+ Const.XML_FILE_NAME);
             faceRecognizer.read(xml.getAbsolutePath());
