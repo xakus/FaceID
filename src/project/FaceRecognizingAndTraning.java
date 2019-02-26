@@ -17,14 +17,8 @@ public class FaceRecognizingAndTraning {
 
     public FaceRecognizingAndTraning() {
         this.traningAndSavePath = Const.TRANING_AND_SAVE_PATH;
-        faceRecognizer = opencv_face.LBPHFaceRecognizer.create(1,1,1000,1000,Double.MAX_VALUE);
-        try {
-            File xml = new File(traningAndSavePath+ Const.XML_FILE_NAME);
-            faceRecognizer.read(xml.getAbsolutePath());
-
-        }catch (Exception e){
-            System.out.println("XML DONT FIND");
-        }
+        faceRecognizer = opencv_face.LBPHFaceRecognizer.create();
+      
 
     }
 
@@ -58,6 +52,13 @@ public class FaceRecognizingAndTraning {
     }
 
     public FacePredict facePredict(IplImage img) {
+        try {
+            File xml = new File(traningAndSavePath+ Const.XML_FILE_NAME);
+            faceRecognizer.read(xml.getAbsolutePath());
+        
+        }catch (Exception e){
+            System.out.println("XML DONT FIND");
+        }
         FacePredict predict = new FacePredict();
         opencv_face.PredictCollector predictCollector;
         IntPointer label = new IntPointer(1);

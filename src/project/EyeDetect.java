@@ -5,6 +5,7 @@ import org.bytedeco.javacpp.opencv_imgproc;
 import org.bytedeco.javacpp.opencv_objdetect;
 import utility.Const;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -64,7 +65,13 @@ public class EyeDetect {
         }
         return cvRect;
     }
-
+    public List<List<Rect>> eyeDetect2(List<opencv_core.IplImage> imgs) {
+        List<List<Rect>> rets=new ArrayList<>();
+        for (IplImage img:imgs){
+            rets.add(eyeDetect2(img));
+        }
+       return rets;
+    }
     public void eyeRectangle(opencv_core.IplImage img, opencv_core.CvSeq cvSeq) {
         int total = cvSeq.total();
         if (total > 0) {

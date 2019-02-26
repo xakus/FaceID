@@ -33,7 +33,7 @@ public class FaceDetectAndSave {
             opencv_core.IplImage img = cvLoadImage(image.getAbsolutePath());
 
             String name = image.getName().split("\\.")[0];
-
+            System.out.println("--->"+name);
             FaceDetect faceDetect = new FaceDetect();
             faceDetect.faceDetect(img, 1.3, 5, opencv_objdetect.CV_HAAR_FIND_BIGGEST_OBJECT);
             List<opencv_core.CvRect> cvRects = faceDetect.getCvRect();

@@ -7,6 +7,7 @@ import org.opencv.core.Core;
 import utility.Const;
 import utility.EyeCenterAndAngle;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.bytedeco.javacpp.opencv_core.*;
@@ -22,7 +23,7 @@ public class Operation {
         count = 0;
     }
 
-    public IplImage faceCut(opencv_core.IplImage img, int x, int y, int w, int h) {
+    public static IplImage faceCut(opencv_core.IplImage img, int x, int y, int w, int h) {
 //        Mat mat=new Mat();
 //        GaussianBlur(cvarrToMat(img),mat,new Size(3,3),1);
 //         img=new IplImage(mat);
@@ -39,8 +40,27 @@ public class Operation {
 
         return image;
     }
+    public static List<IplImage> faceCut(opencv_core.IplImage img,CvSeq seq) {
+        //        Mat mat=new Mat();
+        //        GaussianBlur(cvarrToMat(img),mat,new Size(3,3),1);
+        //         img=new IplImage(mat);
+        List<IplImage> images=new ArrayList<>();
+        int total=seq.total();
+        for(int i=0;i<total;i++){
+            IplImage grayImage = IplImage.create(img.width(),
+                                                 img.height(), IPL_DEPTH_8U, 1);
+            cvCvtColor(img, grayImage, CV_BGR2GRAY);
+    
+            opencv_core.CvRect rect = new opencv_core.CvRect(cvGetSeqElem(seq, i));
+            IplImage image = getSubImage(grayImage, rect.x(),rect.y(),rect.width(),rect.width());
+            // image = equalizeHistogram(image);
+            image = clahe(image);
+            images.add(image);
+        }
+        return images;
+    }
 
-    public IplImage getSubImage(opencv_core.IplImage img, int x, int y, int w, int h) {
+    public static IplImage getSubImage(opencv_core.IplImage img, int x, int y, int w, int h) {
         opencv_core.IplImage iplImage = opencv_core.IplImage.create(w, h, img.depth(), img.nChannels());
         cvSetImageROI(img, cvRect(x, y, w, h));
         cvCopy(img, iplImage);
@@ -63,7 +83,7 @@ public class Operation {
         return image;
     }
 
-    public IplImage clahe(IplImage img) {
+    public static IplImage clahe(IplImage img) {
         Mat mat1 = cvarrToMat(img);
         Mat mat2 = new Mat();
         CLAHE clahe = createCLAHE();
