@@ -1,0 +1,144 @@
+{
+  "success": true,
+  "errMsg": "",
+  "errcode": 0,
+  "result": [
+    {
+      "name": "docmobile_forSolution",
+      "title": "BaxÄ±lma Ã¼Ã§Ã¼n",
+      "count": 3,
+      "icon": "dlya_rishen",
+      "backgroundColor": null,
+      "countBackgroundColor": null,
+      "tabs": [
+        {
+          "name": "docmobile_forDecisionOnConsiderationTab",
+          "title": "BaxÄ±lmada",
+          "count": 3,
+          "runparamsRegister": "[{\"entity\": \"docmobile_api\", \"method\": \"getReg\", \"register\": \"forConsideration\"}]",
+          "runparamsCard": "[{\"entity\": \"docmobile_api\", \"method\": \"getCard\", \"register\": \"forConsideration\", \"ID\": null}]",
+          "isDefault": true
+        },
+        {
+          "name": "docmobile_forDecisionByMovementTab",
+          "title": "HÉrÉkÉt Ã¼zrÉ",
+          "count": 0,
+          "runparamsRegister": "[{\"entity\": \"docmobile_api\", \"method\": \"getReg\", \"register\": \"forDecision\"}]",
+          "runparamsCard": "[{\"entity\": \"docmobile_api\", \"method\": \"getCard\", \"register\": \"forDecision\", \"ID\": null}]",
+          "isForceRefresh": true
+        }
+      ]
+    },
+    {
+      "name": "docmobile_forExecution",
+      "title": "Ä°cra Ã¼Ã§Ã¼n",
+      "count": 0,
+      "runparamsRegister": "[{\"entity\": \"docmobile_api\", \"method\": \"getReg\", \"register\": \"forExecution\"}]",
+      "runparamsCard": "[{\"entity\": \"docmobile_api\", \"method\": \"getCard\", \"register\": \"forExecution\", \"ID\": null}]",
+      "icon": "na_vykonannja",
+      "backgroundColor": null,
+      "countBackgroundColor": null
+    },
+    {
+      "name": "docmobile_api",
+      "title": "RazÄ±laÅdÄ±rmaya",
+      "count": 0,
+      "runparamsRegister": "[{\"entity\": \"docmobile_api\", \"method\": \"getReg\", \"register\": \"onReconciliation\"}]",
+      "runparamsCard": "[{\"entity\": \"docmobile_api\", \"method\": \"getCard\", \"register\": \"onReconciliation\", \"ID\": null}]",
+      "icon": "na_pogodzhennja",
+      "backgroundColor": null,
+      "countBackgroundColor": null
+    },
+    {
+      "name": "docmobile_onControl",
+      "title": "NÉzarÉt Ã¼Ã§Ã¼n",
+      "count": 2,
+      "runparamsRegister": "[{\"entity\": \"docmobile_api\", \"method\": \"getReg\", \"register\": \"onControl\"}]",
+      "icon": "na_kontrol",
+      "backgroundColor": null,
+      "countBackgroundColor": null,
+      "tabs": [
+        {
+          "name": "docmobile_onControlExecutedTab",
+          "title": "Ä°cra edilmiÅdir",
+          "count": 0,
+          "isDefault": true,
+          "runparamsRegister": "[{\"entity\": \"docmobile_api\", \"method\": \"getReg\", \"register\": \"onControlExecuted\"}]",
+          "runparamsCard": "[{\"entity\": \"docmobile_api\", \"method\": \"getCard\", \"register\": \"onControlExecuted\", \"ID\": null}]"
+        },
+        {
+          "name": "docmobile_onControlOnExecutionTab",
+          "title": "Ä°craatda",
+          "count": 2,
+          "runparamsRegister": "[{\"entity\": \"docmobile_api\", \"method\": \"getReg\", \"register\": \"onControlOnExecution\"}]",
+          "runparamsCard": "[{\"entity\": \"docmobile_api\", \"method\": \"getCard\", \"register\": \"onControlOnExecution\", \"ID\": null}]"
+        }
+      ]
+    },
+    {
+      "name": "docmobile_orders",
+      "title": "ÆmrlÉr",
+      "count": 0,
+      "runparamsRegister": "[{\"entity\": \"docmobile_api\", \"method\": \"getReg\", \"register\": \"orders\"}]",
+      "runparamsCard": "[{\"entity\": \"docmobile_api\", \"method\": \"getCard\", \"register\": \"orders\", \"ID\": null}]",
+      "icon": "nakazy",
+      "backgroundColor": null,
+      "countBackgroundColor": null,
+      "isForceRefresh": true
+    },
+    {
+      "name": "docmobile_processed",
+      "title": "Emal edilmiÅdir",
+      "count": 5,
+      "runparamsRegister": "[{\"entity\": \"docmobile_api\", \"method\": \"getReg\", \"register\": \"processed\"}]",
+      "icon": "opracjovani",
+      "backgroundColor": null,
+      "countBackgroundColor": null,
+      "tabs": [
+        {
+          "name": "docmobile_favoriteDocumentsTab",
+          "title": "SeÃ§ilmiÅ",
+          "count": 0,
+          "isDefault": true,
+          "runparamsRegister": "[{\"entity\": \"docmobile_api\", \"method\": \"getReg\", \"register\": \"favoriteDocuments\"}]",
+          "runparamsCard": "[{\"entity\": \"docmobile_api\", \"method\": \"getCard\", \"register\": \"favoriteDocuments\", \"ID\": null}]"
+        },
+        {
+          "name": "docmobile_forExecutionByMySubordinatesTab",
+          "title": "Tabe ÅÉxslÉrin/qurumlarÄ±n icraatÄ±nda",
+          "count": 3,
+          "runparamsRegister": "[{\"entity\": \"docmobile_api\", \"method\": \"getReg\", \"register\": \"forExecutionByMySubordinates\"}]",
+          "runparamsCard": "[{\"entity\": \"docmobile_api\", \"method\": \"getCard\", \"register\": \"forExecutionByMySubordinates\", \"ID\": null}]"
+        },
+        {
+          "name": "docmobile_executedByMySubordinatesTab",
+          "title": "Tabe ÅÉxslÉr/qurumlar tÉrÉfindÉn icra edilmiÅdir",
+          "count": 1,
+          "runparamsRegister": "[{\"entity\": \"docmobile_api\", \"method\": \"getReg\", \"register\": \"executedByMySubordinates\"}]",
+          "runparamsCard": "[{\"entity\": \"docmobile_api\", \"method\": \"getCard\", \"register\": \"executedByMySubordinates\", \"ID\": null}]"
+        },
+        {
+          "name": "docmobile_executedTab",
+          "title": "TÉrÉfimdÉn icra edilmiÅdir",
+          "count": 0,
+          "runparamsRegister": "[{\"entity\": \"docmobile_api\", \"method\": \"getReg\", \"register\": \"executed\"}]",
+          "runparamsCard": "[{\"entity\": \"docmobile_api\", \"method\": \"getCard\", \"register\": \"executed\", \"ID\": null}]"
+        },
+        {
+          "name": "docmobile_reconciledTab",
+          "title": "RazÄ±laÅdÄ±rÄ±lmÄ±ÅdÄ±r/Ä°mzalanmÄ±ÅdÄ±r",
+          "count": 1,
+          "runparamsRegister": "[{\"entity\": \"docmobile_api\", \"method\": \"getReg\", \"register\": \"reconciled\"}]",
+          "runparamsCard": "[{\"entity\": \"docmobile_api\", \"method\": \"getCard\", \"register\": \"reconciled\", \"ID\": null}]"
+        },
+        {
+          "name": "docmobile_viewedTab",
+          "title": "TÉsdiqdÉn imtÄ±na edilmiÅlÉr",
+          "count": 0,
+          "runparamsRegister": "[{\"entity\": \"docmobile_api\", \"method\": \"getReg\", \"register\": \"viewed\"}]",
+          "runparamsCard": "[{\"entity\": \"docmobile_api\", \"method\": \"getCard\", \"register\": \"viewed\", \"ID\": null}]"
+        }
+      ]
+    }
+  ]
+}
