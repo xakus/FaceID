@@ -11,7 +11,7 @@ public class DBC {
     public static void Connection() throws ClassNotFoundException, SQLException {
         conn = null;
         Class.forName("org.sqlite.JDBC");
-        conn = DriverManager.getConnection("jdbc:sqlite:res/db.db");
+        conn = DriverManager.getConnection("jdbc:sqlite:db.db");
 
         System.out.println("База Подключена!");
     }

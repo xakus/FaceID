@@ -32,22 +32,20 @@ public class FaceDetect{
         
         public opencv_core.CvSeq faceDetect(opencv_core.IplImage img, double scale_factor, int min_neighbors, int CV_HAAR_FLAG){
                 opencv_core.CvMemStorage memStorage = opencv_core.CvMemStorage.create();
-                
                 opencv_core.CvSeq face = cvHaarDetectObjects(img, cascade, memStorage, scale_factor, min_neighbors, CV_HAAR_FLAG);
-                
                 int total = face.total();
                 cvRect = new LinkedList<>();
                 if (total > 0){
                         
                         for (int i = 0; i < total; i++){
                                 opencv_core.CvRect rect = new opencv_core.CvRect(cvGetSeqElem(face, i));
-                                //                int h = rect.height()-rect.height()/5;
-                                //                int w = rect.width()-((int)(h/1.618)/2);
-                                //                int x = rect.x()+((int)(h/1.618)/2)/2, y = rect.y()+(rect.height()/5)/2;
-                                int                h     = rect.height();
-                                int                w     = rect.width();
-                                int                x     = rect.x();
-                                int                y     = rect.y();
+                                                int h = rect.height()-rect.height()/5;
+                                                int w = rect.width()-((int)(h/1.618)/2);
+                                                int x = rect.x()+((int)(h/1.618)/2)/2, y = rect.y()+(rect.height()/5)/2;
+//                                int                h     = rect.height();
+//                                int                w     = rect.width();
+//                                int                x     = rect.x();
+//                                int                y     = rect.y();
                                 opencv_core.CvRect rect2 = new opencv_core.CvRect(x, y, w, h);
                                 cvRect.add(rect2);
                         }

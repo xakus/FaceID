@@ -26,7 +26,7 @@ public class FaceID{
                 //String pathname = "https://www.youtube.com/watch?v=ydZBBAPE_mw";
                 // String pathname = "http://streams.videolan.org/samples/MPEG-4/video.mp4";
                 //        String pathname = "https://youtu.be/FuK-6gD3h_8";
-                String pathname = "C:\\Users\\xakus\\Desktop\\Images\\DSC_2068.MOV";
+                String pathname = "/Users/owner/Desktop/Images/DSC_2068.MOV";
                 String im       = "/Users/owner/Desktop/Images/Niyal Huseynova.png";
                 //        try {
                 
@@ -37,9 +37,9 @@ public class FaceID{
 //                  grabber.setAudioChannels(2);
 //                  grabber.setFormat("mp4");
 //                grabber.start();
-               // grabber.setFrameNumber(400);
-                
-                
+//                grabber.setFrameNumber(400);
+//
+//
 //                Frame frame = grabber.grab();
                 //////////
                 
@@ -78,7 +78,7 @@ public class FaceID{
                         //  img = Operation.rotate(img,angle.getCenterPoint(),angle.getAngle());
                         
                         //
-                        CvSeq seq = faceDetect.faceDetect(img, 1.3, 5, CV_HAAR_SCALE_IMAGE);
+                        CvSeq seq = faceDetect.faceDetect(img, 1.2, 6, CV_HAAR_FEATURE_MAX);
                         faceDetect.faceRectangleAndText(img, seq);
                         // eyeDetect.eyeRectangle(img,rects);
                         canvasFrame.showImage(converter.convert(img));
